@@ -1,0 +1,67 @@
+:root {
+  --font--sans: "Operator Mono Light", "LXGW WenKai Mono";
+  --font--serif: Lyon-Text, Georgia, ui-serif, serif;
+  --font--mono: iawriter-mono, Nitti, Menlo, Courier, monospace;
+  --font--code: "Operator Mono Light", "LXGW WenKai Mono";
+  --font--math: KaTeX_Main, Times New Roman, serif;
+  --font--quotes: "Operator Mono Light", "LXGW WenKai Mono";
+  --font--headings: "Operator Mono Light", "LXGW WenKai Mono";
+}
+
+/* 正文样式 */
+[style*="Segoe UI"] {
+  font-family: var(--font--sans) !important;
+}
+
+[style*="Georgia"] {
+  font-family: var(--font--serif) !important;
+}
+
+[style*="iawriter-mono"] {
+  font-family: var(--font--mono) !important;
+}
+
+/* 代码样式 */
+[style*="SFMono-Regular"] {
+  font-family: var(--font--code) !important;
+  font-size: 90% !important;
+}
+
+/* 标题样式 */
+[placeholder="Untitled"],
+[placeholder="Heading 1"],
+[placeholder="Heading 2"],
+[placeholder="Heading 3"] {
+  font-family: var(--font--headings) !important;
+}
+
+/* 引用样式 */
+.notion-quote-block {
+  font-family: var(--font--quotes) !important;
+}
+
+/* 公式样式 */
+.katex,
+.katex * {
+  font-family: var(--font--math) !important;
+}
+
+/* 页面字体大小 */
+.notion-page-content {
+  font-size: 16px !important;
+}
+
+/* 页面内容宽度，页面居中 */
+.layout {
+  --content-width: minmax(auto, 1000px) !important;
+  grid-template-columns: [full-start] 1fr [content-start] var(--content-width) [content-end] 1fr [full-end] !important;
+}
+
+.layout.layout-tablet {
+  --content-width: 1fr;
+  --margin-width: 96px;
+  @media (min-width: 900px) {
+    --content-width: 1000px !important;
+    --margin-width: 1fr;
+  }
+}

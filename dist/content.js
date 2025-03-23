@@ -1,0 +1,16 @@
+var applyStyles = function () {
+    console.log("应用样式");
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = chrome.runtime.getURL("fonts.css");
+    document.head.appendChild(link);
+    console.log("应用样式完成");
+};
+// 尝试在 DOMContentLoaded 时执行
+document.addEventListener("DOMContentLoaded", applyStyles);
+// 如果 DOMContentLoaded 未触发，用 MutationObserver 兜底
+var observer = new MutationObserver(function () {
+    applyStyles();
+    observer.disconnect(); // 应用一次后停止
+});
+observer.observe(document.body, { childList: true, subtree: true });

@@ -1,5 +1,11 @@
 var applyStyles = function () {
     console.log("应用样式");
+    // 加载 FontAwesome CSS
+    var fontAwesomeLink = document.createElement("link");
+    fontAwesomeLink.rel = "stylesheet";
+    fontAwesomeLink.href = chrome.runtime.getURL("assets/fontawesome/css/all.css");
+    document.head.appendChild(fontAwesomeLink);
+    // 加载自定义样式
     var link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = chrome.runtime.getURL("fonts.css");

@@ -52,16 +52,7 @@
 }
 
 /* 页面内容宽度，页面居中 */
-.layout {
+/* .layout {
   --content-width: minmax(auto, 1000px) !important;
   grid-template-columns: [full-start] 1fr [content-start] var(--content-width) [content-end] 1fr [full-end] !important;
-}
-
-.layout.layout-tablet {
-  --content-width: 1fr;
-  --margin-width: 96px;
-  @media (min-width: 900px) {
-    --content-width: 1000px !important;
-    --margin-width: 1fr;
-  }
-}
+} */

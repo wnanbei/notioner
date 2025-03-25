@@ -1,11 +1,11 @@
 :root {
-  --font--sans: "Operator Mono Light", "LXGW WenKai Mono";
+  --font--sans: "Operator Mono Light", "LXGW WenKai Mono Bold";
   --font--serif: Lyon-Text, Georgia, ui-serif, serif;
   --font--mono: iawriter-mono, Nitti, Menlo, Courier, monospace;
-  --font--code: "Operator Mono Light", "LXGW WenKai Mono";
+  --font--code: "Operator Mono Light", "LXGW WenKai Mono Bold";
   --font--math: KaTeX_Main, Times New Roman, serif;
-  --font--quotes: "Operator Mono Light", "LXGW WenKai Mono";
-  --font--headings: "Operator Mono Light", "LXGW WenKai Mono";
+  --font--quotes: "Operator Mono Light", "LXGW WenKai Mono Bold";
+  --font--headings: "Operator Mono Light", "LXGW WenKai Mono Bold";
 }
 
 /* 正文样式 */
@@ -48,7 +48,8 @@
 
 /* 页面字体大小 */
 .notion-page-content {
-  font-size: 16px !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
 }
 
 h1,
@@ -73,7 +74,7 @@ h4 {
 /* 标题标识样式 */
 h2::before {
   content: "\f0c9"; /* 标识符号 */
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
   color: rgb(170, 170, 170);
@@ -84,7 +85,7 @@ h2::before {
 }
 h3::before {
   content: "\3d";
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
   color: rgb(170, 170, 170);

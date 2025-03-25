@@ -59,32 +59,45 @@ h4 {
   position: relative; /* 使伪元素相对于标题定位 */
 }
 
+/* 标题间距 */
+.notion-header-block {
+  margin-top: 1em !important;
+}
+.notion-sub_header-block {
+  margin-top: 0.8em !important;
+}
+.notion-sub_sub_header-block {
+  margin-top: 0.5em !important;
+}
+
+/* 标题标识样式 */
 h2::before {
   content: "\f0c9"; /* 标识符号 */
   font-size: 1.5rem;
   font-family: "Font Awesome 6 Free";
+  font-weight: 600;
   color: rgb(170, 170, 170);
   position: absolute;
   left: -20px; /* 距离标题左侧的距离 */
   top: 50%; /* 垂直居中起点 */
   transform: translateY(-50%); /* 精确垂直居中 */
 }
-
 h3::before {
   content: "\3d";
   font-size: 1.2rem;
   font-family: "Font Awesome 6 Free";
+  font-weight: 600;
   color: rgb(170, 170, 170);
   position: absolute;
   left: -20px;
   top: 50%;
   transform: translateY(-50%);
 }
-
 h4::before {
   content: "\f068";
   font-size: 1rem;
   font-family: "Font Awesome 6 Free";
+  font-weight: 600;
   color: rgb(170, 170, 170);
   position: absolute;
   left: -20px;

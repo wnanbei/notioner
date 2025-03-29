@@ -1,11 +1,11 @@
 :root {
-  --font--sans: "Operator Mono Light", "LXGW WenKai Mono Bold";
+  --font--sans: "Operator Mono Light", "LXGW WenKai";
   --font--serif: Lyon-Text, Georgia, ui-serif, serif;
   --font--mono: iawriter-mono, Nitti, Menlo, Courier, monospace;
-  --font--code: "Operator Mono Light", "LXGW WenKai Mono Bold";
+  --font--code: "Operator Mono Light", "LXGW WenKai";
   --font--math: KaTeX_Main, Times New Roman, serif;
-  --font--quotes: "Operator Mono Light", "LXGW WenKai Mono Bold";
-  --font--headings: "Operator Mono Light", "LXGW WenKai Mono Bold";
+  --font--quotes: "Operator Mono Light", "LXGW WenKai";
+  --font--headings: "Operator Mono Light", "LXGW WenKai";
 }
 
 /* 正文样式 */
@@ -24,16 +24,8 @@
 /* 代码样式 */
 [style*="SFMono-Regular"] {
   font-family: var(--font--code) !important;
-  font-size: 90% !important;
+  font-size: 95% !important;
 }
-
-/* 标题样式 */
-/* [placeholder="Untitled"],
-[placeholder="Heading 1"],
-[placeholder="Heading 2"],
-[placeholder="Heading 3"] {
-  font-family: var(--font--headings) !important;
-} */
 
 /* 引用样式 */
 .notion-quote-block {
@@ -79,7 +71,7 @@ h2::before {
   font-weight: 600;
   color: rgb(170, 170, 170);
   position: absolute;
-  left: -20px; /* 距离标题左侧的距离 */
+  left: -15px; /* 距离标题左侧的距离 */
   top: 50%; /* 垂直居中起点 */
   transform: translateY(-50%); /* 精确垂直居中 */
 }
@@ -90,7 +82,7 @@ h3::before {
   font-weight: 600;
   color: rgb(170, 170, 170);
   position: absolute;
-  left: -20px;
+  left: -15px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -101,7 +93,7 @@ h4::before {
   font-weight: 600;
   color: rgb(170, 170, 170);
   position: absolute;
-  left: -20px;
+  left: -15px;
   top: 50%;
   transform: translateY(-50%);
 }

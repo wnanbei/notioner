@@ -65,41 +65,49 @@ h4 {
 
 /* 标题标识样式 */
 h2::before {
-  content: "\f0c9"; /* 标识符号 */
-  font-size: 1rem;
+  content: "\f101"; /* 汉堡菜单图标 */
+  font-size: 0.7rem;
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
-  color: rgb(170, 170, 170);
+  color: #8b5cf6; /* 紫色 */
   position: absolute;
-  left: -15px; /* 距离标题左侧的距离 */
-  top: 50%; /* 垂直居中起点 */
-  transform: translateY(-50%); /* 精确垂直居中 */
-}
-h3::before {
-  content: "\3d";
-  font-size: 1rem;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
-  color: rgb(170, 170, 170);
-  position: absolute;
-  left: -15px;
+  left: -18px;
   top: 50%;
   transform: translateY(-50%);
-}
-h4::before {
-  content: "\f068";
-  font-size: 1rem;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 600;
-  color: rgb(170, 170, 170);
-  position: absolute;
-  left: -15px;
-  top: 50%;
-  transform: translateY(-50%);
+  opacity: 0.8;
+  transition: all 0.2s ease;
 }
 
-/* 页面内容宽度，页面居中 */
-/* .layout {
-  --content-width: minmax(auto, 1000px) !important;
-  grid-template-columns: [full-start] 1fr [content-start] var(--content-width) [content-end] 1fr [full-end] !important;
-} */
+h3::before {
+  content: "\f105"; /* 双右箭头 */
+  font-size: 0.7rem; /* 修改：统一为1rem */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  color: #ec4899; /* 粉色 */
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+h4::before {
+  content: "\f0da"; /* 小箭头图标 */
+  font-size: 0.7rem; /* 修改：统一为1rem */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  color: #10b981; /* 绿色调 */
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+/* 鼠标悬停效果 */
+h2:hover::before, h3:hover::before, h4:hover::before {
+  opacity: 1;
+  transform: translateY(-50%) translateX(-3px);
+}

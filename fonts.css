@@ -106,8 +106,21 @@ h4::before {
   transition: all 0.2s ease;
 }
 
+/* 代码块样式 */
+.notion-code-block .line-numbers {
+  padding-top: 0px !important; /* 减少顶部内边距 */
+  padding-bottom: 0px !important; /* 减少底部内边距 */
+}
+
+.notion-code-block > div > div > div[style*="padding: 22px;"] {
+  padding-top: 15px !important; /* 减少顶部内边距 */
+  padding-bottom: 15px !important; /* 减少低部内边距 */
+}
+
 /* 鼠标悬停效果 */
-h2:hover::before, h3:hover::before, h4:hover::before {
+h2:hover::before,
+h3:hover::before,
+h4:hover::before {
   opacity: 1;
   transform: translateY(-50%) translateX(-3px);
 }

@@ -55,12 +55,15 @@ h4 {
 /* 标题间距 */
 .notion-header-block {
   margin-top: 1em !important;
+  margin-bottom: 0.8em !important;
 }
 .notion-sub_header-block {
-  margin-top: 0.8em !important;
+  margin-top: 1em !important;
+  margin-bottom: 0.6em !important;
 }
 .notion-sub_sub_header-block {
-  margin-top: 0.5em !important;
+  margin-top: 1em !important;
+  margin-bottom: 0.4em !important;
 }
 
 /* 标题标识样式 */

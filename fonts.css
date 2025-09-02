@@ -116,13 +116,14 @@ h4::before {
   font-family: var(--font--code) !important;
   padding-top: 0px !important; /* 减少顶部内边距 */
   padding-bottom: 0px !important; /* 减少底部内边距 */
-  background: #111418 !important;
+  scrollbar-color: rgb(255 255 255 / 10%) rgba(0, 0, 0, 0) !important;
 }
 
 .notion-code-block > div > div > div[style*="padding: 22px;"] {
   padding-top: 15px !important; /* 减少顶部内边距 */
   padding-bottom: 15px !important; /* 减少低部内边距 */
   background: #111418 !important;
+  border-radius: 8px !important;
 }
 
 .notion-code-block div[role="button"] {
@@ -157,17 +158,22 @@ h4::before {
 .token.builtin,
 .token.char,
 .token.inserted,
-.token.selector,
-.token.string {
+.token.selector {
   color: #c62f52 !important;
+}
+.token.string {
+  color: #00A884 !important;
 }
 .language-css .token.string,
 .style .token.string,
 .token.entity,
-.token.operator,
 .token.url {
   background: #111418 !important;
   color: #00a884 !important;
+}
+.token.operator {
+  background: #111418 !important;
+  color: #d4770c !important;
 }
 .token.atrule,
 .token.attr-value,
@@ -176,7 +182,7 @@ h4::before {
 }
 .token.class-name,
 .token.function {
-  color: #3585bb !important;
+  color: #3585BB !important;
 }
 .token.important,
 .token.regex,
